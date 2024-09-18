@@ -6,6 +6,7 @@ import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import CreatePlan from "./pages/createPlan/CreatePlan";
+import ErrorPage from "./pages/errorPage/ErrorPage";
 
 function App() {
   const routes = createBrowserRouter([
@@ -24,6 +25,10 @@ function App() {
         {
           path: "/create-plan",
           element: <CreatePlan />,
+        },
+        {
+          path: "*",
+          element: <ErrorPage />,
         },
       ],
     },
