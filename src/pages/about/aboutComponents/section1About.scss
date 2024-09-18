@@ -1,0 +1,40 @@
+.section1About-container{
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    height: 450px;
+    border-radius: 10px;
+    background-image: url("../../../../assets//about/desktop/image-hero-whitecup.jpg");
+    .desc{
+        max-width: 445px;
+        h1{
+            font-family: Lora;
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 48px;
+            text-align: left;
+            color: #FEFCF7;
+        }
+        p{
+            font-family: Barlow;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            color: #FEFCF7;
+        }
+    }
+}
+@media only screen and (min-width: 375px) and (max-width: 500px) {
+    .section1About-container{
+        background-image: url("../../../../assets//about//mobile/image-hero-whitecup.jpg");
+        .desc{
+            h1{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}

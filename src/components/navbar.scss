@@ -1,0 +1,47 @@
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0px;
+    .menu{
+        display: none;
+    }
+    .logo{
+        cursor: pointer;
+    }
+    .nav{
+      ul{
+        display: flex;
+        column-gap: 20px;
+        list-style: none;
+        li{
+            font-family: Barlow;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+            letter-spacing: 0.9230769276618958px;
+            text-align: left;
+            a{
+                color: #83888F;
+                text-decoration: none;
+                &:hover{
+                    color: #333D4B;
+                }
+            }
+        }
+      }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar-container{
+        .menu{
+            display: block;
+            cursor: pointer;
+            width: 30px;
+            height: 20px;
+        }
+        .nav{
+            display: none;
+        }
+    }
+}

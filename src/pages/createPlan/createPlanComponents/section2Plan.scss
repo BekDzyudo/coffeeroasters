@@ -1,0 +1,150 @@
+.section2Plan-container{
+    // height: 500px;
+    background: #2C343E;
+    z-index: -99999;
+    padding: 100px 50px 0px;
+    .status{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 50px;
+        .line{
+            width: 99.5%;
+            position: absolute;
+            top: 40%;
+            z-index: -1;
+            border: 2px solid #FDD6BA;
+
+        }
+        .item{
+            border: 2px solid #0E8784;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            // background: #FEFCF7;
+        }
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        .card{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            h1{
+                font-family: Lora;
+                font-size: 72px;
+                font-weight: 900;
+                line-height: 72px;
+                text-align: left;
+                color: #FDD6BA;
+                margin: 0;
+            }
+            h2{
+                font-family: Lora;
+                font-size: 32px;
+                font-weight: 900;
+                line-height: 36px;
+                text-align: left;
+                color: #FEFCF7;
+            }
+            p{
+                font-family: Barlow;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                text-align: left;                
+                color: #FEFCF7;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .row{
+        display: flex;
+        justify-content: space-between;
+        row-gap: 20px;
+        .card{
+            width: 30%;
+            display: flex;
+            column-gap: 30px;
+            align-items: center !important;
+            h1{
+                font-family: Lora;
+                font-size: 72px;
+                font-weight: 900;
+                line-height: 72px;
+                text-align: left;
+                color: #FDD6BA;
+            }
+            h2{
+                font-family: Lora;
+                font-size: 32px;
+                font-weight: 900;
+                line-height: 36px;
+                text-align: left;
+                color: #FEFCF7;
+                margin-bottom: 10px;
+            }
+            p{
+                font-family: Barlow;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                text-align: left;                
+                color: #FEFCF7;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 375px) and (max-width: 500px){
+    .section2Plan-container{
+        padding: 50px 20px 0px;
+        .status{
+            display: none;
+        }
+        .row{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            .card{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                h1{
+                    font-family: Lora;
+                    font-size: 72px;
+                    font-weight: 900;
+                    line-height: 72px;
+                    text-align: center;
+                }
+                h2{
+                    font-family: Lora;
+                    font-size: 28px;
+                    font-weight: 900;
+                    line-height: 32px;
+                    text-align: center;
+                }
+                p{
+                    font-family: Barlow;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    text-align: center;                
+                    color: #FEFCF7;
+                }
+            }
+        }
+    }
+    
+    
+}
