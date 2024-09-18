@@ -3,6 +3,9 @@
     align-items: center;
     justify-content: space-between;
     margin: 30px 0px;
+    position: relative;
+    top: 0;
+    left: 0;
     .menu{
         display: none;
     }
@@ -30,6 +33,27 @@
             }
         }
       }
+    }
+    .dropdown{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        border-radius: 0px 0px 8px 8px;
+        ul{
+            padding: 10px;
+            li{
+                padding: 10px 5px;
+                border-bottom: 1px solid #ccc;
+                a{
+                    color: #333D4B;
+                    font-size: 15px;
+                }
+            }
+            
+        }
     }
 }
 @media only screen and (max-width: 768px) {
